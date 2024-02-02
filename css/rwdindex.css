@@ -412,6 +412,7 @@
     #section .slidePage2 {
         background: url(../img/bg-main3.jpg) center / cover;
         height: 95vh;
+        min-height: 850px;
         width: 100%;
     }
 
@@ -423,6 +424,7 @@
     #section .slidePage2 .honeySlideOuter .honeySlideInner .honeySlide {
         text-align: center;
         height: 95vh;
+        min-height: 850px;
         width: 100%;
         position: relative;
         overflow: hidden;
