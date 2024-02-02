@@ -607,12 +607,16 @@
 
     /*sweetNews*/
 
+
+    #section .row {
+        min-width: 280px;
+    }
+
     #section .sweetNews {
         background: #e7e1d3;
         padding: 110px auto;
         text-align: center;
         color: #737067;
-
     }
 
     #section .sweetNews h2 {
@@ -633,11 +637,16 @@
         align-items: center;
         padding: 5px 0 20px 0;
         margin: 0 auto;
+        text-align: center;
+        position: relative;
     }
 
     #section .sweetNews ul li {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         flex: 1 1 33.33;
-        min-width: 263px;
+        width: 263px;
         height: 200px;
         padding: 8px 20px;
         margin: 5px;
@@ -942,7 +951,7 @@
     }
 }
 
-
+/* ================ max-width: 1440px ================ */
 
 @media screen and (max-width: 1440px) {
     #section .slidePage2 .honeySlideOuter .honeySlideInner button.slick-next {
@@ -953,4 +962,23 @@
         left: 40px;
         z-index: 99;
     }
+}
+
+/* ================ max-width: 500px ================ */
+
+@media screen and (max-width: 500px) {
+    #section .sweetNews {
+        background: #e7e1d3;
+        padding: 110px 50px;
+        text-align: center;
+        color: #737067;
+    }
+
+    #section .sweetNews ul li {
+        min-width: 263px;
+        height: 200px;
+        padding: 8px 20px;
+        margin: 5px;
+    }
+
 }
