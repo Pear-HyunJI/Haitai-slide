@@ -45,7 +45,7 @@
     }
 
     #header .nav .depth1 {
-        display: none;
+        display: block;
     }
 
     #header .nav .depth1>li {
