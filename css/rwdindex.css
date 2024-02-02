@@ -247,7 +247,7 @@
         border: none;
         background: none;
         font-size: 50px;
-        color: #ffffffa1;
+        color: #aeaba9;
         position: absolute;
         /* top: 50%; */
         top: 50%;
@@ -560,7 +560,8 @@
         font-size: 50px;
         color: #fff;
         position: absolute;
-        top: 50%;
+        top: 45%;
+        transform: translateY(-50%);
         cursor: pointer;
     }
 
