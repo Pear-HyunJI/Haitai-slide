@@ -45,7 +45,7 @@
     }
 
     #header .nav .depth1 {
-        display: none;
+        display: block;
     }
 
     #header .nav .depth1>li {
@@ -250,17 +250,20 @@
         color: #aeaba9;
         position: absolute;
         /* top: 50%; */
-        top: 50%;
-        transform: translateY(-50%);
+        /* transform: translateY(-50%); */
+        left: 50%;
+        transform: translateX(-50%);
         cursor: pointer;
     }
 
     #section .slidePage1 .slideContainer1 button.slick-next {
-        right: 40PX;
+        /* right: 40PX; */
+        bottom: -12%;
     }
 
     #section .slidePage1 .slideContainer1 button.slick-prev {
-        left: 40px;
+        /* left: 40px; */
+        top: -15%;
         z-index: 99;
     }
 
