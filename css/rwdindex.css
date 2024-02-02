@@ -411,7 +411,7 @@
     /* slidePage2 - honeySlide의 첫번째 슬라이드 */
     #section .slidePage2 {
         background: url(../img/bg-main3.jpg) center / cover;
-        height: 105vh;
+        height: 95vh;
         width: 100%;
     }
 
