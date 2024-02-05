@@ -1,3 +1,5 @@
+/* ================ max-width: 1200px ================ */
+
 @media screen and (max-width: 1200px) {
     #header .row {
         padding: 0 15px;
@@ -38,17 +40,17 @@
         color: #de1d85;
     }
 
-    #header .nav {
+    #header #nav {
         display: block;
         width: 100%;
         padding-left: 0px;
     }
 
-    #header .nav .depth1 {
+    #header #nav .depth1 {
         display: block;
     }
 
-    #header .nav .depth1>li {
+    #header #nav .depth1>li {
         display: block;
         align-items: center;
         position: relative;
@@ -56,7 +58,7 @@
         padding-top: 10px;
     }
 
-    #header .nav .depth1 a {
+    #header #nav .depth1 a {
         font-size: 20px;
         padding: 0px 0px;
         margin: 5px 0;
@@ -65,16 +67,16 @@
         padding-left: 15px;
     }
 
-    #header .nav .depth1 li>a {
+    #header #nav .depth1 li>a {
         padding: 10px;
         /* border-bottom: 2px solid #de1d85; */
     }
 
-    #header .nav .depth2 {
+    #header #nav .depth2 {
         position: static;
         top: 100%;
         left: 0;
-        display: block;
+        display: none;
         background: #fff5fd;
         border: 0px;
         border-top: block;
@@ -85,7 +87,7 @@
         padding-left: 10px;
     }
 
-    #header .nav .depth2>li>a {
+    #header #nav .depth2>li>a {
         display: inline-block;
         font-size: 17px;
         color: #5c5c5c;
@@ -94,7 +96,7 @@
         border: none;
     }
 
-    #header .nav .depth2 .fa-circle {
+    #header #nav .depth2 .fa-circle {
         color: #de1d85;
         font-size: 5px;
         position: absolute;
@@ -102,20 +104,20 @@
         display: none;
     }
 
-    #header .nav .depth1>li:hover>a {
+    #header #nav .depth1>li.on>a {
         border-bottom: 2px solid #de1d85;
     }
 
-    #header .nav .depth1>li:hover .depth2 {
+    #header #nav .depth1>li.on .depth2 {
         display: block;
     }
 
-    #header .nav .depth1 .depth2>li:hover a {
+    #header #nav .depth1 .depth2>li:hover a {
         color: #de1d85;
         /* list-style: circle; */
     }
 
-    #header .nav .depth1 .depth2>li:hover .fa-circle {
+    #header #nav .depth1 .depth2>li:hover .fa-circle {
         display: block;
     }
 
@@ -521,37 +523,6 @@
         animation: fadeIn 1s 1 both 0.5s;
     }
 
-
-
-    /* slidePage2 - sprite */
-    .newSweetImg {
-        background-image: url(../img/img-main2-0-0-1.png);
-    }
-
-    .blind {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        text-indent: -9999px;
-    }
-
-    .newSweetSprite {
-        width: 88px;
-        height: 101px;
-        background-position: 0px -2467px;
-    }
-
-    .haitaiSweetImg {
-        background-image: url(../img/img-main2-0-1-1.png);
-    }
-
-    .haitaiSweetSprite {
-        width: 88px;
-        height: 101px;
-        background-position: 0px -2467px;
-    }
-
     /*slidePage2 - arrow */
     #section .slidePage2 .honeySlideOuter .honeySlideInner {
         position: relative;
@@ -806,16 +777,6 @@
 @media screen and (max-width: 800px) {
     /*sweetWorld*/
 
-    #section .sweetWorld .row {
-        max-width: 816px;
-        padding: 50px 0;
-    }
-
-    #section .sweetWorld .text {
-        color: #5c5c5c;
-        text-align: center;
-    }
-
     #section .sweetWorld .text h2 {
         color: #4d4c4c;
         font-size: 38px;
@@ -879,11 +840,11 @@
         transform: translate(-50%, 0);
     }
 
-    #section .slidePage2 .honeySlideOuter .honeySlideInner img.honey {
+    /* #section .slidePage2 .honeySlideOuter .honeySlideInner img.honey {
         position: absolute;
         bottom: 45px;
         right: 90px;
-    }
+    } */
 
     #section .slidePage2 .honeySlide .sweetContainer {
         position: absolute;
@@ -896,33 +857,6 @@
 
     #section .slidePage2 .honeySlide .sweetContainer .haitaiBox {
         padding-top: 20px;
-    }
-
-
-    #section .slidePage2 .honeySlide .sweetContainer .sweetBox .newSweetImg {
-        margin: 0 0 15px 50px;
-    }
-
-    #section .slidePage2 .honeySlide .sweetContainer .sweetBox .newSweetContent {
-        margin: 15px 0 0 2px;
-    }
-
-    #section .slidePage2 .honeySlide .sweetContainer .haitaiBox .haitaiSweetImg {
-        margin: 0 0 15px 53px;
-    }
-
-    #section .slidePage2 .honeySlide .sweetContainer .haitaiBox .haitaiSweetContent {
-        margin: 15px 2px 0 0;
-    }
-
-    /* slidePage2 - honeySlide의 첫번째 슬라이드 애니메이션 */
-
-    #section .slidePage2 .honeySlide .sweetContainer {
-        opacity: 1;
-    }
-
-    #section .slidePage2 .slick-current.slick-active .sweetContainer {
-        animation: fadeIn 1s 1 both 0.5s;
     }
 
     /* slidePage2 - honeySlide의 두번째 슬라이드 */
@@ -942,16 +876,6 @@
         left: 50%;
         transform: translateX(-50%);
         cursor: pointer;
-    }
-
-    /* slidePage2 - honeySlide의 두번째 슬라이드 애니메이션 */
-
-    #section .slidePage2 .honeySlideOuter .honeySlideInner .characterButton {
-        opacity: 1;
-    }
-
-    #section .slidePage2 .slick-current.slick-active .characterButton {
-        animation: fadeIn 1s 1 both 0.5s;
     }
 }
 
