@@ -78,3 +78,12 @@ $("#nav .depth1 > li").on("click", function () {
     $(this).siblings().removeClass("on");
   }
 });
+$("#nav .depth1 .depth2 > li").on("mouseover mouseout", function () {
+  $(this).toggleClass("on");
+  $(this).siblings().removeClass("on");
+});
+
+$("#header .menuopen").on("click", function () {
+  $(this).next().stop().slideToggle(200);
+  $(this).find("i").toggleClass("fa-bars fa-times");
+});

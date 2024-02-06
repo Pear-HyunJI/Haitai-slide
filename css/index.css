@@ -80,7 +80,7 @@ img {
 #header #nav .depth2 {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -12px;
     display: none;
     background: #fff5fd;
     border: 2px solid #faa8d2;
@@ -111,12 +111,12 @@ img {
     display: block;
 }
 
-#header #nav .depth1 .depth2>li:hover a {
+#header #nav .depth1 .depth2>li.on a {
     color: #de1d85;
     /* list-style: circle; */
 }
 
-#header #nav .depth1 .depth2>li:hover .fa-circle {
+#header #nav .depth1 .depth2>li.on .fa-circle {
     display: block;
 }
 

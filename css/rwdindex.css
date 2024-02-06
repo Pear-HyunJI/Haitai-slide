@@ -41,7 +41,7 @@
     }
 
     #header #nav {
-        display: block;
+        display: none;
         width: 100%;
         padding-left: 0px;
     }
@@ -112,12 +112,12 @@
         display: block;
     }
 
-    #header #nav .depth1 .depth2>li:hover a {
+    #header #nav .depth1 .depth2>li.on a {
         color: #de1d85;
         /* list-style: circle; */
     }
 
-    #header #nav .depth1 .depth2>li:hover .fa-circle {
+    #header #nav .depth1 .depth2>li.on .fa-circle {
         display: block;
     }
 
