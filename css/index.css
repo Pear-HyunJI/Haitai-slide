@@ -43,8 +43,9 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    border-bottom: 1px solid #d4d4d4;
+    /* border-bottom: 1px solid #b1b1b1; */
     z-index: 99;
+    /* position: relative; */
 }
 
 #header .menuopen {
@@ -71,6 +72,10 @@ img {
     position: relative;
 }
 
+#header #nav .depth1>li.on {
+    border-top: 1px solid #de1d85;
+}
+
 #header #nav .depth1 a {
     font-size: 20px;
     padding: 0 30px;
@@ -82,12 +87,9 @@ img {
     top: 100%;
     left: -12px;
     display: none;
-    background: #fff5fd;
-    border: 2px solid #faa8d2;
-    border-top: none;
-    border-radius: 0 0 15px 15px;
     width: 120%;
     text-align: center;
+    z-index: 9999;
 }
 
 #header #nav .depth2>li>a {
@@ -96,7 +98,6 @@ img {
     color: #5c5c5c;
     padding: 5px 10px 5px 0;
     position: relative;
-
 }
 
 #header #nav .depth2 .fa-circle {
@@ -118,6 +119,56 @@ img {
 
 #header #nav .depth1 .depth2>li.on .fa-circle {
     display: block;
+}
+
+#header .subbg {
+    width: 100%;
+    height: 305px;
+    background: #fff5fd;
+    border-bottom: 2px solid #faa8d2;
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+#header #nav {
+    position: relative;
+}
+
+/* subnavImg 스프린트 */
+#header .subnavImg {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+
+#header .sn1 {
+    background-image: url(../img/제품소개\ \(1\).png);
+}
+
+#header .sn2 {
+    background-image: url(../img/달콤한세상.png);
+}
+
+#header .sn3 {
+    background-image: url(../img/이벤트\ \(1\).png);
+}
+
+#header .sn4 {
+    background-image: url(../img/고객센터\ \(1\).png);
+}
+
+#header .sn5 {
+    background-image: url(../img/회사소개\ \(1\).png);
+}
+
+
+#header .subnavSprite {
+    width: 218px;
+    height: 275px;
+    background-position: 0 0;
 }
 
 /*search*/
